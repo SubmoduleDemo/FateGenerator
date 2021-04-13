@@ -79,8 +79,12 @@ final class FateGenerator {
     public func fate(name: String) -> String {
         var magicNumber = 1
         name.forEach { magicNumber += Int($0.asciiValue ?? 1) }
-        let firstFate = fate(seed: magicNumber * 2)
-        let secondFate = fate(seed: magicNumber * 3)
+        return longFate(seed: magicNumber)
+    }
+    
+    private func longFate(seed: Int) -> String {
+        let firstFate = fate(seed: seed * 2)
+        let secondFate = fate(seed: seed * 3)
         return firstFate + "\n" + secondFate
     }
     
