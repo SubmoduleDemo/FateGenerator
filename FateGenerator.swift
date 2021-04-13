@@ -73,6 +73,9 @@ final class FateGenerator {
         case islam
     }
     
+    /**
+     One fate for one soul at all times!
+     */
     public func fate(name: String) -> String {
         var magicNumber = 1
         name.forEach { magicNumber += Int($0.asciiValue ?? 1) }
