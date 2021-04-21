@@ -73,8 +73,10 @@ final class FateGenerator {
         case islam
     }
     
+    // Remote change 2
+    
     /**
-     One fate for one soul at all times &&&
+     One fate for one soul at all times
      */
     public func fate(name: String) -> String {
         var magicNumber = 1
