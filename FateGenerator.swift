@@ -74,7 +74,7 @@ final class FateGenerator {
     }
     
     /**
-     One fate for one soul at all times ^^^
+     One fate for one soul at all times ---
      */
     public func fate(name: String) -> String {
         var magicNumber = 1
