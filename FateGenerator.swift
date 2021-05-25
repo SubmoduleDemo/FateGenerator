@@ -75,6 +75,12 @@ final class FateGenerator {
     
     // Remote change 6
     
+    public func additionalFate(name: String) -> String {
+        var magicNumber = 3
+        name.forEach { magicNumber += Int($0.asciiValue ?? 1) }
+        return longFate(seed: magicNumber)
+    }
+    
     /**
      One fate for one soul at all times
      */
